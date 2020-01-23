@@ -1,6 +1,0 @@
-chr - seq seq 0 1091 black
-seq 10 500 fill_color=blue
-
-#band seq band1 band1 0 204 grey
-#band seq band2 band2 205 1091 red
-

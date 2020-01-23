@@ -1,1 +1,0 @@
-chr - seq KRAS-A30C-W1200-diff 0 75 black

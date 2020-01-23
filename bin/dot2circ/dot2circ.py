@@ -54,6 +54,11 @@ parser.add_argument("--temperature",
                     type=int,
                     default = 37,
                     help="folding temperature")
+parser.add_argument(
+    "--outputdir",
+    default="./",
+    help="output dir")
+
 
 
 args = parser.parse_args()
@@ -91,9 +96,10 @@ else:
 
 
 # run circos
-circoscmd = '{0} {1} -param image/file**="{2}.png" '.format(
+circoscmd = '{0} {1} -outputdir {2} -param image/file**="{3}.png" -param image/radius*=1000p '.format(
     PERLBIN,
     CIRCOSBIN,
+    args.outputdir,
     args.prefix)
 
 # Overide chr seq name
@@ -120,5 +126,7 @@ if (args.title):
     
     
 print ('calling: "{0}"'.format(circoscmd))
+print ('======circos output log========')
 circosout = check_output(circoscmd, shell=True)
-print (circosout)
+print (circosout.decode('ascii'))
+print ('===============================')

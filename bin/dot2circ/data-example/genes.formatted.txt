@@ -1,0 +1,5 @@
+seq 0 0 5UTR fill_color=yellow,r0=1.01r,r1=1.01r+20p
+seq 1 13 CDS fill_color=green,r0=1.01r,r1=1.01r+20p
+seq 14 14 3UTR fill_color=blue,r0=1.01r,r1=1.01r+20p
+seq 3 4 c.-G3C fill_color=vdred,r0=1.03r,r1=1.03r+20p
+seq 3 4 c.-G3C fill_color=vdred,r0=1.03r,r1=1.03r+20p
