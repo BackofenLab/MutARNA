@@ -62,3 +62,8 @@ The results under the `global/` directory contain the visualization of base-pair
 
     - `remuRNA.csv` : prediction scores by remuRNA. remuRNA score `(H(WT||MUT))`is the relative entropy between the ensemble of structures in wild type versus mutant RNA. The score reflects the changes in the global structure of the RNA.
     - `RNAsnp.csv` : prediction scores by RNAsnp. RNAsnp scores are generated in two modes (`-m 1`, `-m 2`) of  (semi-)global and local folding and based on the two metrics of base-pairing distance (`d_max`) in both modes and correlation coefficient (`r_min`). RNAsnp further computes the significance of score in term of  `p-value`s against a pre-computed table of sequence with similar features.
+
+
+## How to cite?
+
+Milad Miladi, Martin Raden, Sven Diederichs, Rolf Backofen, MutaRNA: analysis and visualization of mutation-induced changes in RNA structure, Nucleic Acids Research, Volume 48, Issue W1, 02 July 2020, Pages W287–W291, https://doi.org/10.1093/nar/gkaa331
